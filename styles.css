@@ -27,6 +27,17 @@ body{
 .mobile_links{
     display:flex;
     gap:60px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.3);
+    margin-left: auto;
+}
+
+.button-title{
+    display: flex;
 }
 
 li{
@@ -35,7 +46,7 @@ li{
     transition: transform 0.2s ease-in;
 }
 
-.logo:hover,li:hover{
+li:not(.logo):hover{
     transform: scale(1.1);
 }
 
@@ -46,33 +57,37 @@ li{
     margin-right: auto;
     transform:scale(1);
     transition: transform 0.2s ease-in;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.3);
 }
 
-li::after{
+li:not(.logo)::after {
     content: "";
     position: absolute;
     width: 0;
     bottom: -5px;
     left: 0;
-    transition:0.5s ease-in;
+    transition: 0.5s ease-in;
 }
 
-li:hover::after{
-    content: "";
-    position: absolute;
-    background-color: rgb(245, 153, 32);
+li:not(.logo):hover::after {
+    background-color: rgb(48, 43, 77);
     width: 100%;
-    height: 1px;
+    height: 2px;
     bottom: -5px;
     left: 0;
 }
 
 
 .page{
-    background: url("./img/pexels-blitzboy-1144176.jpg") center / cover no-repeat;
+    background: url("./img/pexels-lum3n-44775-167699.jpg") center / cover no-repeat;
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     margin: 0px;
     padding-top: 120px;
 }
@@ -85,7 +100,6 @@ li:hover::after{
 }
 
 .page_p {
-    
     position: absolute;
     inset: 0;
     display: flex;
@@ -106,7 +120,7 @@ li:hover::after{
     margin-bottom: 10px;
     display: inline-block;
     font-size: 50px;
-    border-bottom: 2px solid rgb(245, 153, 32);
+    border-bottom: 2px solid rgb(48, 43, 77);
     padding-bottom: 5px;
 }
 
@@ -114,16 +128,36 @@ li:hover::after{
     margin-top: 30px;
     padding-inline:40px;
     padding-block: 20px;
-    background-color: rgb(245, 153, 32);
+    background-color: rgba(0, 0, 0, 0.404);
     color: white;
     border: none;
     border-radius: 10px;
-    transition:0.3s ease-in
+    transition:0.3s ease-in;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.3);
 }
 
 .explore_btn:hover{
-    background-color: rgb(28, 36, 49);
+    background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.logo-image{
+    width: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    height: auto;
+}
+
+.logodiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
 }
 
 }
@@ -136,6 +170,10 @@ li:hover::after{
     right: 0;
     left:0;
     z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav_links{
@@ -145,68 +183,85 @@ li:hover::after{
     align-items: center;
     gap: 60px;
     font-size: large;
-    cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     padding:0;
 }
 
 .mobile_links{
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:30px;
     background-color:rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px); ;
-    padding-inline: 150px;
-    padding-block: 100px;
+    padding-inline: 100px;
+    padding-block: 60px;
     border-radius: 20px;
+    opacity:0;
+    transform: translateY(-100vh);
+    transition: transform 0.7s ease, opacity 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+}
+
+.mobile_links.open{
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.7s ease, opacity 0.3s ease;
 }
 
 li{
     position: relative;
     transform:scale(1);
     transition: transform 0.2s ease-in;
+    cursor: pointer;
 }
 
-.logo:hover,li:hover{
+li:not(.logo):hover{
     transform: scale(1.1);
 }
 
 .logo{
+    display:flex;
+    align-items: center;
+    gap:12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: oblique;
     font-size: 25px;
     transform:scale(1);
     transition: transform 0.2s ease-in;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.3);
 }
 
-li::after{
+li:not(.logo)::after {
     content: "";
     position: absolute;
     width: 0;
     bottom: -5px;
     left: 0;
-    transition:0.5s ease-in;
+    transition: 0.5s ease-in;
 }
 
-li:hover::after{
-    content: "";
-    position: absolute;
-    background-color: rgb(245, 153, 32);
+li:not(.logo):hover::after {
+    background-color: rgb(48, 43, 77);
     width: 100%;
-    height: 1px;
+    height: 2px;
     bottom: -5px;
     left: 0;
 }
 
-
 .page{
-    background: url("./img/pexels-blitzboy-1144176.jpg") center / cover no-repeat;
+    background: url("./img/pexels-lum3n-44775-167699.jpg") center / cover no-repeat;
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     margin: 0px;
     padding-top: 120px;
 }
@@ -235,7 +290,7 @@ li:hover::after{
     margin-bottom: 10px;
     display: inline-block;
     font-size: 30px;
-    border-bottom: 2px solid rgb(245, 153, 32);
+    border-bottom: 2px solid rgb(48, 43, 77);
     padding-bottom: 5px;
 }
 
@@ -244,18 +299,54 @@ li:hover::after{
 }
 
 .explore_btn{
-    margin-top: 30px;
+    margin-top: 70px;
     padding-inline:40px;
     padding-block: 20px;
-    background-color: rgb(245, 153, 32);
+    background-color: rgba(0, 0, 0, 0.404);
     color: white;
     border: none;
     border-radius: 10px;
-    transition:0.3s ease-in
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in,transform 0.3s ease;
 }
 
-.explore_btn:hover{
-    background-color: rgb(28, 36, 49);
+.explore_btn:hover,.menu-btn:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    color:black;
     cursor: pointer;
 }
+
+.menu-btn{
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    border:none;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    padding-inline: 10px;
+    padding-block: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.3);
+}
+
+button:active{
+    transform: scale(1.1);
+}
+
+.logo-image{
+    width: 60px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    height: auto;
+}
+
+.logodiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
 }
