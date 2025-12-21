@@ -26,7 +26,7 @@ let propertiesBefore=(e) =>{
 }
 
 
-const header = document.querySelector(".logodiv");
+/**const header = document.querySelector(".logodiv");
 
     window.addEventListener('scroll', function() {
     if (window.scrollY > 70) { 
@@ -47,4 +47,4 @@ const header = document.querySelector(".logodiv");
         propertiesBefore(logoImg);
     }
 });
-
+**/

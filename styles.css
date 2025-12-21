@@ -207,7 +207,7 @@ li:not(.logo):hover::after {
 }
 
 .scrolled{
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0,0.4);
@@ -219,7 +219,7 @@ li:not(.logo):hover::after {
     justify-content: center;
     align-items: center;
     gap:30px;
-    background-color:rgba(0, 0, 0, 0.4);
+    background-color:rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px); ;
     padding-inline: 100px;
     padding-block: 60px;
@@ -258,12 +258,9 @@ li:not(.logo):hover{
     font-size: 25px;
     transform:scale(1);
     transition: transform 0.2s ease-in,background-color 0.5s ease-in;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
     padding-inline: 30px;
     padding-block: 10px;
     border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0,0.3);
 }
 
 li:not(.logo)::after {
@@ -328,7 +325,7 @@ li:not(.logo):hover::after {
     margin-top: 70px;
     padding-inline:40px;
     padding-block: 20px;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     border: none;
     border-radius: 10px;
@@ -337,15 +334,13 @@ li:not(.logo):hover::after {
     pointer-events:auto;
 }
 
-.explore_btn:hover,.menu-btn:hover{
+.explore_btn:hover{
     background-color: rgba(255, 255, 255, 0.1);
     color:black;
     cursor: pointer;
 }
 
 .menu-btn{
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
     border:none;
     color: white;
     font-size: 20px;
@@ -354,7 +349,7 @@ li:not(.logo):hover::after {
     padding-block: 5px;
     cursor: pointer;
     transition: transform 0.3s ease,background-color 0.5s ease-in;
-    box-shadow: 0 4px 12px rgba(0, 0, 0,0.3);
+    background-color: transparent;
 }
 
 button:active{
@@ -363,7 +358,6 @@ button:active{
 
 .logo-image{
     width: 60px;
-    background: rgba(0, 0, 0, 0.4);
     border-radius: 50%;
     height: auto;
     transition: background-color 0.5s ease-in;
@@ -375,6 +369,10 @@ button:active{
     justify-content: center;
     gap: 20px;
     transition: background-color 0.5s ease-in;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.7);
 }
 
 .mid-p{
@@ -389,7 +387,6 @@ button:active{
 
 }
 
-
 .footer{
     position: relative;
     color: rgb(255, 255, 255);
@@ -403,7 +400,7 @@ button:active{
 }
 
 .foot-container{
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
     padding: 70px;
     display: flex;
