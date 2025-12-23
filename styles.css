@@ -260,9 +260,6 @@ li:not(.logo):hover::after {
   transition: background-color 0.3s ease-in,color 0.3s ease-in,transform 0.3s ease;
 }
 
-.submit-button:active{
-    transform: scale(1.1);
-}
 
 .submit-button:hover{
     background-color: rgb(2, 150, 137);
@@ -284,6 +281,10 @@ i:hover{
     color:rgba(2, 150, 137);
     cursor: pointer;
     transform: scale(1.2);
+}
+
+button:active{
+    transform: scale(1.1);
 }
 
 }
@@ -362,15 +363,11 @@ li:not(.logo):hover{
 .logo{
     display:flex;
     align-items: center;
-    gap:12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: oblique;
-    font-size: 25px;
+    font-size: 18px;
     transform:scale(1);
-    transition: transform 0.2s ease-in,background-color 0.5s ease-in;
     padding-inline: 30px;
-    padding-block: 10px;
-    border-radius: 20px;
 }
 
 li:not(.logo)::after {
