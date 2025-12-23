@@ -8,8 +8,10 @@ btn.addEventListener("click", () => {
 
     if (menu.classList.contains('open')) {
         btn.innerHTML = '✕';
+        btn.style.color="rgb(2, 150, 137)"
     } else {
         btn.innerHTML = '☰';
+        btn.style.color="rgba(255, 255, 255, 1)"
     }
 });
 
