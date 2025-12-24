@@ -1,5 +1,6 @@
 body{
     margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -18,7 +19,6 @@ body{
     align-items: center;
     gap: 60px;
     font-size: large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     transition: background-color 0.5s ease-in;
     background: rgba(0, 0, 0, 0.7);
@@ -57,7 +57,6 @@ li:not(.logo):hover{
 
 
 .logo{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: oblique;
     font-size: 25px;
     margin-right: auto;
@@ -117,7 +116,6 @@ li:not(.logo):hover::after {
     max-width: 600px;
     font-size: 16px;
     line-height: 1.4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:lighter;
 }
 
@@ -176,7 +174,6 @@ li:not(.logo):hover::after {
     max-width: 600px;
     font-size: 16px;
     line-height: 1.4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:lighter;
 }
 
@@ -188,7 +185,6 @@ li:not(.logo):hover::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .foot-container{
@@ -257,7 +253,6 @@ li:not(.logo):hover::after {
     padding-block: 10px;
     padding-inline: 5px;
     border-radius: 20px;
-  transition: background-color 0.3s ease-in,color 0.3s ease-in,transform 0.3s ease;
 }
 
 
@@ -287,6 +282,64 @@ button:active{
     transform: scale(1.1);
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    gap:40px;
+    place-items: center;
+}
+
+.container-card{
+    width: 400px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+    transition: transform 0.2s ease-in;
+}
+
+.container-card:hover{
+    transform: translateY(-6px);
+    cursor: pointer;
+}
+
+.container-image{
+    width: 100%;
+    display: flex;
+    border-radius: 20px;
+}
+
+.card-info{
+    height: 150px;
+    padding-inline: 10px;
+    color:rgb(211, 211, 211);
+}
+
+.image-wrapper{
+    padding: 10px;
+}
+
+.before-text{
+    color: rgb(2, 150, 137);
+}
+
+.read-more{
+    text-align: center;
+    color:rgb(2, 150, 137)
+}
+
+.arrow{
+    color: rgb(49, 252, 218);
+}
+
 }
 
 
@@ -311,7 +364,6 @@ button:active{
     align-items: center;
     gap: 60px;
     font-size: large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     padding:0;
 }
@@ -363,7 +415,6 @@ li:not(.logo):hover{
 .logo{
     display:flex;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: oblique;
     font-size: 18px;
     transform:scale(1);
@@ -413,7 +464,6 @@ li:not(.logo):hover::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-block: 100px;
 }
 
@@ -493,8 +543,6 @@ button:active{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 .footer{
@@ -505,7 +553,6 @@ button:active{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-inline: 20px;
     
 }
@@ -591,5 +638,65 @@ i:hover{
     cursor: pointer;
     transform: scale(1.2);
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.grid-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap:40px;
+}
+
+.container-card{
+    width: 300px;
+    height: 410px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+    transition: transform 0.2s ease-in;
+}
+
+.container-card:hover{
+    transform: translateY(-6px);
+    cursor: pointer;
+}
+
+.container-image{
+    width: 100%;
+    display: flex;
+    border-radius: 20px;
+}
+
+.card-info{
+    height: 150px;
+    padding-inline: 10px;
+    color:rgb(211, 211, 211);
+}
+
+.image-wrapper{
+    padding: 10px;
+}
+
+.before-text{
+    color: rgb(2, 150, 137);
+}
+
+.read-more{
+    text-align: center;
+    color:rgb(2, 150, 137)
+}
+
+.arrow{
+    color: rgb(49, 252, 218);
+}
+
 
 }
