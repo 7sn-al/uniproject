@@ -278,6 +278,10 @@ i:hover{
     transform: scale(1.2);
 }
 
+button{
+    transition: transform 0.3s ease-in;
+}
+
 button:active{
     transform: scale(1.1);
 }
@@ -338,6 +342,83 @@ a{
 
 .arrow{
     color: rgb(49, 252, 218);
+}
+
+.read_btn{
+    padding-inline:30px;
+    padding-block: 10px;
+    background-color: rgb(2, 150, 137,0.6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in,transform 0.3s ease;
+}
+
+.read_btn:hover{
+    background-color: rgb(214, 214, 214,0.4);
+    color:rgb(2, 150, 137);
+    cursor: pointer;
+}
+
+.monument-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#monument-img{
+    width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+}
+
+#description{
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    text-align: strat;
+    margin-inline: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    width: 900px;
+    font-size: 25px;
+}
+
+.monument-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.btn-gallery{
+    border: none;
+    color:white;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+    padding-block: 10px;
+    padding-inline: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in,color 0.3s ease-in,transform 0.3s ease;
+}
+
+.btn-gallery:hover{
+    background-color: rgb(2, 150, 137,0.4);
+    color:black;
+    cursor: pointer;
+}
+
+.btn-gallery:active{
+    transform: scale(1.1);
 }
 
 }
@@ -689,14 +770,84 @@ a{
     color: rgb(2, 150, 137);
 }
 
-.read-more{
-    text-align: center;
-    color:rgb(2, 150, 137)
-}
 
 .arrow{
     color: rgb(49, 252, 218);
 }
 
+.read_btn{
+    padding-inline:30px;
+    padding-block: 10px;
+    background-color: rgb(2, 150, 137,0.6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in,transform 0.3s ease;
+}
+
+.read_btn:hover{
+    background-color: rgb(214, 214, 214,0.4);
+    color:rgb(2, 150, 137);
+    cursor: pointer;
+}
+
+.monument-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#monument-img{
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+}
+
+#description{
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    margin-inline: 20px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.monument-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.btn-gallery{
+    border: none;
+    color:white;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.8);
+    padding-block: 10px;
+    padding-inline: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in,color 0.3s ease-in,transform 0.3s ease;
+}
+
+.btn-gallery:hover{
+    background-color: rgb(2, 150, 137,0.4);
+    color:black;
+    cursor: pointer;
+}
+
+.btn-gallery:active{
+    transform: scale(1.1);
+}
 
 }
