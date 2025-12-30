@@ -50,7 +50,7 @@ const monuments = {
 if (monuments[id]) {
   document.getElementById("title").textContent = monuments[id].title;
   document.getElementById("location").textContent = monuments[id].location;
-  document.getElementById("description").textContent = monuments[id].description;
+  document.getElementById("description-text").textContent = monuments[id].description;
 
   const bg=document.querySelector(".page");
   bg.style.background=`url(${monuments[id].bg})`;
@@ -61,4 +61,19 @@ if (monuments[id]) {
   const img = document.getElementById("monument-img");
   img.src = monuments[id].image;
 }
+
+const monumentKeys = Object.keys(monuments);
+let currentIndex = monumentKeys.indexOf(id);
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % monumentKeys.length;
+  window.location.href = `monument.html?id=${monumentKeys[currentIndex]}`;
+});
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+  currentIndex =
+    (currentIndex - 1 + monumentKeys.length) % monumentKeys.length;
+  window.location.href = `monument.html?id=${monumentKeys[currentIndex]}`;
+});
+
 
