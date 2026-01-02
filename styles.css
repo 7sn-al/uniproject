@@ -95,7 +95,6 @@ li:not(.logo):hover::after {
     min-height: 100vh;
     margin: 0px;
     padding-top: 200px;
-
 }
 
 .overlay{
@@ -113,10 +112,15 @@ li:not(.logo):hover::after {
     align-items: flex-start; 
     padding-left: 50px; 
     color: white;
-    max-width: 600px;
+    max-width: 800px;
     font-size: 16px;
     line-height: 1.4;
     font-weight:lighter;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    margin-inline: 20px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .title{
@@ -175,6 +179,11 @@ li:not(.logo):hover::after {
     font-size: 16px;
     line-height: 1.4;
     font-weight:lighter;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .footer{
@@ -579,6 +588,11 @@ li:not(.logo):hover::after {
     align-items: center;
     text-align: center;
     margin-block: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    margin-inline: 20px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .title{
@@ -657,6 +671,11 @@ button:active{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    margin-inline: 20px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .footer{
